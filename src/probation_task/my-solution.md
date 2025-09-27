@@ -35,7 +35,7 @@ This is why in my workspace folder there are multiple `.py` programs.
 | servive.py    | Test sum function                        |
 
 ## Cheatsheet
-I initally had alot of trouble initialsing the program so I made myself a cheatsheet
+I initally had alot of trouble initialising the program so I made myself a cheatsheet.
 
 | Description                      | Shell Program                                                                            |
 | :------------------------------- | :--------------------------------------------------------------------------------------- |
