@@ -1,3 +1,6 @@
+# Table of Contents
+
+- [Table of Contents](#table-of-contents)
 - [Tools I Use](#tools-i-use)
   - [Visual Studio \& Docker](#visual-studio--docker)
   - [Watching Tutorials](#watching-tutorials)
