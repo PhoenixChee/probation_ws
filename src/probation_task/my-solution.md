@@ -14,14 +14,12 @@
   - [5. Implement client to change vehicle to GUIDED mode](#5-implement-client-to-change-vehicle-to-guided-mode)
   - [6. Debugging](#6-debugging)
 
-
 # Tools I Use
 
 ## Visual Studio & Docker
-I didn’t want to install a lot of software on my computer permanantly, so I use Docker to run `ROS Humble-Desktop` inside VS Code. I got this idea from the Club's [Docker](https://github.com/NTU-Mecatron/Docker) repository.
+I didn’t want to install too much software permanently on my computer, so I decided to use Docker to run `ROS Humble-Desktop` inside VS Code. I got this idea from the Club’s [Docker](https://github.com/NTU-Mecatron/Docker) repository.
 
-The steps are simple due to my past experince using Docker for my other projects. The only step is different is setting up the correct environment.
-
+Thanks to my past experience with Docker on other projects, the setup was straightforward. The only part that differed was configuring the environment correctly.
 
 ## Watching Tutorials
 I had no experience with ROS or ROS2, so it was overwhelming at first. Nodes, Services, Publishers—it was all new. I followed a [YouTube tutorial](https://www.youtube.com/watch?v=0aPbWsyENA8&list=PLLSegLrePWgJudpPUof4-nVFHGkB62Izy) to learn and program the probation task at the same time.
@@ -35,9 +33,6 @@ This is why in my workspace folder there are multiple `.py` programs.
 | subscriber.py | Read data messages from vehicle's topics |
 | client.py     | Change vehicle's state                   |
 | servive.py    | Test sum function                        |
-
-
-
 
 ## Cheatsheet
 I initally had alot of trouble initialsing the program so I made myself a cheatsheet
