@@ -110,7 +110,7 @@ self.target_label_id = int(self.declare_parameter('target_label_id', 3).value)
 self.det_conf_threshold = self.declare_parameter('det_conf_threshold', 0.70).value
 self.target_box = None
 
- self.kp_linear_y = self.declare_parameter('linear_y_kp', 2.5).value
+self.kp_linear_y = self.declare_parameter('linear_y_kp', 2.5).value
 self.kd_linear_y = self.declare_parameter('linear_y_kd', 0.3).value
 self.prev_error_y = 0.0
 self.max_y_vel = self.declare_parameter('max_y_vel', 2.0).value
@@ -195,7 +195,7 @@ def _select_best(self, candidates: list[dict]) -> dict | None:
         return None
     return max(candidates, key=lambda boxes: boxes['conf'])
 ```
-After filtering, the next step is to extract data from the detected object. The values `bounding_box.x` and `bounding_box.y` give the object’s position relative to the camera window. I then calculate the difference between the window’s center and the bounding box’s center. This offset is used to control the vehicle’s movements.
+After filtering, the next step is to check if the object is the correct target. Then, extract data from the target object. The values `bounding_box.x` and `bounding_box.y` give the object’s position relative to the camera window. I then calculate the difference between the window’s center and the bounding box’s center. This offset is used to control the vehicle’s movements.
 ```python
 if best is None:
     self.target_box = None
@@ -207,7 +207,7 @@ self.dy = best['y'] - 0.5
 ```
 
 ## 4. Go straight the Gate
-Once the vehicle is centered, it moves forward. I added a 10-second delay to avoid missing the gate:
+I initially decided to have the vehicle simulataneously positioning itself and moving forward. However, I faced an issue where it can sometimes miss due to the bounding box detection affecting the lateral movements of the vehicle when it is too close to the gate. Hence, I added a 10-second delay to properly center the vehicle and avoid missing the gate. Once the vehicle is centered, it then moves forward. 
 
 ```python
 if self.current_heading is not None and self.current_depth is not None:
