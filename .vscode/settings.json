@@ -92,5 +92,27 @@
         "variant": "cpp",
         "core": "cpp"
     },
-    "cmake.sourceDirectory": "/home/bgiabao/workshop_ws/src/workshop_main"
+    "cmake.sourceDirectory": "/home/bgiabao/workshop_ws/src/workshop_main",
+    "python.autoComplete.extraPaths": [
+        "/probation_ws/install/probation_task/lib/python3.10/site-packages",
+        "/probation_ws/install/workshop_service/lib/python3.10/site-packages",
+        "/probation_ws/install/workshop_main/lib/python3.10/site-packages",
+        "/probation_ws/install/vision_msgs/local/lib/python3.10/dist-packages",
+        "/probation_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/probation_ws/build/probation_ws",
+        "/probation_ws/install/probation_ws/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/probation_ws/install/probation_task/lib/python3.10/site-packages",
+        "/probation_ws/install/workshop_service/lib/python3.10/site-packages",
+        "/probation_ws/install/workshop_main/lib/python3.10/site-packages",
+        "/probation_ws/install/vision_msgs/local/lib/python3.10/dist-packages",
+        "/probation_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/probation_ws/build/probation_ws",
+        "/probation_ws/install/probation_ws/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
 }
