@@ -13,6 +13,7 @@
   - [4. Go straight the Gate](#4-go-straight-the-gate)
   - [5. Implement client to change vehicle to GUIDED mode](#5-implement-client-to-change-vehicle-to-guided-mode)
   - [6. Debugging](#6-debugging)
+- [Video](#video)
 
 # Tools I Use
 
@@ -229,3 +230,6 @@ Last but not least, the last step of the program. I use the solution from `minim
 
 ## 6. Debugging
 Since a lot of data is being passed around, it’s helpful to use `self.get_logger().info()` throughout the program. These log messages make it easier to understand what’s happening during execution. When they’re no longer needed, they can simply be commented out.
+
+# Video
+Click on this [Link](https://drive.google.com/file/d/13zpISHjrLmNuRIPfnkC_khyGlu2zoVut/view?usp=sharing)
